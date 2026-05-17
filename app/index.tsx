@@ -1,26 +1,13 @@
-import { StyleSheet, View } from "react-native";
+import { View } from "react-native";
 
 import { LockOrb } from "@/components/lock-orb";
 
 export default function HomeScreen() {
 	return (
-		<View style={styles.screen}>
-			<View style={styles.stage}>
+		<View className="flex-1 bg-[#F7F6F2]">
+			<View className="flex-1 items-center justify-center px-6">
 				<LockOrb />
 			</View>
 		</View>
 	);
 }
-
-const styles = StyleSheet.create({
-	screen: {
-		flex: 1,
-		backgroundColor: "#F7F6F2",
-	},
-	stage: {
-		flex: 1,
-		alignItems: "center",
-		justifyContent: "center",
-		paddingHorizontal: 24,
-	},
-});
